@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static PrimeNumberDownloader.Constants;
 using static PrimeNumberDownloader.FileManagementTools;
+using static PrimeNumberDownloader.StringTools;
 
 namespace PrimeNumberDownloader
 {
@@ -14,7 +15,6 @@ namespace PrimeNumberDownloader
     {
         static public void CreatePrimesList()
         {
-            List<string> primesList = new List<string>();
             string htmlContent;
             string lastValue;
             IWebDriver website = new ChromeDriver();            
@@ -24,44 +24,40 @@ namespace PrimeNumberDownloader
             lastValue = GetLastValueFromFile();
             if (lastValue != FIRST_PRIME) EnterLastStoredValue(website, lastValue);
 
-            //-----Working area
-
-            htmlContent = website.PageSource;
-            StringTools.ExtractPrimesFromPageContent(ref primesList, htmlContent);
-
-            for (int i = 0; i < 10; i++)
+            while (StringToLong(lastValue) <= LAST_PRIME_TOO_LOOK_FOR)
             {
+                htmlContent = website.PageSource;
+                ExtractPrimesFromPageContent(htmlContent);
                 IWebElement nextButton = website.FindElement(By.Name("nextButton"));
                 nextButton.Click();
-                System.Threading.Thread.Sleep(DEFAULT_SLEEP);
-                htmlContent = website.PageSource;
-                StringTools.ExtractPrimesFromPageContent(ref primesList, htmlContent);
+                lastValue = GetLastValueFromFile();
+                System.Threading.Thread.Sleep(DEFAULT_SLEEP);                
             }
-
-            //-----EOWA
 
             website.Quit();
         }
 
+        // Find the list for the prime numbers list in a page
         static public void ExtendListToMaxSize(IWebDriver website)
-        {
-            // Find the list for the prime numbers list in a page
+        {            
             IWebElement primePerPageDropdown = website.FindElement(By.Name("primePageInput"));
             primePerPageDropdown.Click(); // To open the list
             IWebElement option600 = website.FindElement(By.XPath("//option[@value='600']"));
             option600.Click();
 
             ClickSearchButton(website);
+            System.Threading.Thread.Sleep(DEFAULT_SLEEP);
         }
 
+        // Find "Number" and enter stored value
         static public void EnterLastStoredValue(IWebDriver website, string value)
-        {
-            // Find "Number" and enter stored value
+        {            
             IWebElement numberInput = website.FindElement(By.Name("numberInput"));
             numberInput.Clear();
             numberInput.SendKeys(value);
 
             ClickSearchButton(website);
+            System.Threading.Thread.Sleep(DEFAULT_SLEEP);
         }
 
         static public void ClickSearchButton(IWebDriver website)
