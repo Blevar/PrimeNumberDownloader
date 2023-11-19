@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PrimeNumberDownloader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+877b8ba9210fd261f2618ed24d3e06b69f9c4e31")]
 [assembly: System.Reflection.AssemblyProductAttribute("PrimeNumberDownloader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PrimeNumberDownloader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

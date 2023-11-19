@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "lCkQNXGgSklv15WJO469tc1Q+KHp5J1UA3xGuxbvOjZsnRIqKxYBhwLmptVAgimlOym58nx2CeuRnzz4kGxETw==",
+  "dgSpecHash": "x+5fhj2jYWlt4nMBaCR3RONoOI74BUa1HPcwuotv5VzRZgBbj92UZfeZr1KYY6L7hajl52Mj9Pkwyfe3Rx0HSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jprusinowski\\Desktop\\WSB\\PrimeNumberDownloader\\PrimeNumberDownloader\\PrimeNumberDownloader.csproj",
+  "projectFilePath": "H:\\WSB\\ProjektyInz\\PrimeNumberDownloader\\PrimeNumberDownloader.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jprusinowski\\.nuget\\packages\\htmlagilitypack\\1.11.54\\htmlagilitypack.1.11.54.nupkg.sha512",
-    "C:\\Users\\jprusinowski\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
-    "C:\\Users\\jprusinowski\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\jprusinowski\\.nuget\\packages\\selenium.webdriver\\4.15.0\\selenium.webdriver.4.15.0.nupkg.sha512",
-    "C:\\Users\\jprusinowski\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
+    "C:\\Users\\Jasiek\\.nuget\\packages\\htmlagilitypack\\1.11.54\\htmlagilitypack.1.11.54.nupkg.sha512",
+    "C:\\Users\\Jasiek\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\Jasiek\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Jasiek\\.nuget\\packages\\selenium.webdriver\\4.15.0\\selenium.webdriver.4.15.0.nupkg.sha512",
+    "C:\\Users\\Jasiek\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

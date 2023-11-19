@@ -50,3 +50,4 @@ C:\Users\jprusinowski\Desktop\WSB\PrimeNumberDownloader\PrimeNumberDownloader\ob
 C:\Users\jprusinowski\Desktop\WSB\PrimeNumberDownloader\PrimeNumberDownloader\obj\Debug\net7.0\PrimeNumberDownloader.pdb
 C:\Users\jprusinowski\Desktop\WSB\PrimeNumberDownloader\PrimeNumberDownloader\obj\Debug\net7.0\PrimeNumberDownloader.genruntimeconfig.cache
 C:\Users\jprusinowski\Desktop\WSB\PrimeNumberDownloader\PrimeNumberDownloader\obj\Debug\net7.0\ref\PrimeNumberDownloader.dll
+H:\WSB\ProjektyInz\PrimeNumberDownloader\obj\Debug\net7.0\PrimeNumberDownloader.sourcelink.json
