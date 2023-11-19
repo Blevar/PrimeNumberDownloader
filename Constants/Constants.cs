@@ -9,7 +9,7 @@ namespace PrimeNumberDownloader
     static class Constants
     {
         public const string SOURCE_URL = "http://compoasso.free.fr/primelistweb/page/prime/liste_online_en.php";
-        public const string DEFAULT_FILE_PATH = ".";
+        public const string DEFAULT_FILE_PATH = "primes.txt";
 
         public const int DEFAULT_SLEEP = 10; // ms
     }
